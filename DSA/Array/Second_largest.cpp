@@ -8,6 +8,12 @@ int getmax(int arr[], int size){
          max=arr[i];
         
         }
+
+        for(int j=0;j<max;j++){
+            if (arr[i]>max){
+                max=arr[i];
+            }
+        }
          
     }
    return max;
@@ -15,7 +21,7 @@ int getmax(int arr[], int size){
 
 
 int main(){
-    int arr[5]={1,2,34,4,5};
+    int arr[5]={1,24,34,4,5};
     cout<< getmax (arr, 5);
 
 }
